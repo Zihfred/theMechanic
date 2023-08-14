@@ -1,0 +1,258 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  /*margin-top: 75px;*/
+}
+.header {
+  /*position: fixed;*/
+  top: 0;
+  width: 100%;
+  height: 75px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid #fbb900;
+  border-top: 5px solid #fbb900;
+  background-color: #EDEDED;
+  /*z-index: 2;*/
+}
+.header .logo {
+  width: 100px;
+}
+
+.menu-btn {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  z-index:2;
+  overflow: hidden;
+}
+.menu-btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222222;
+  transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  padding-top: 100px;
+  background: black;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+}
+.menu.active {
+  transform: translateX(0);
+}
+.menu-btn.active {
+  display: none;
+}
+.closeButton {
+  display: none;
+  color: white;
+}
+.closeButton.active {
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  z-index: 2;
+}
+.menu li {
+  list-style-type: none;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+}
+.menuLink:hover {
+  color: #fbb900;
+}
+
+.numberWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  text-decoration: none;
+  color: #fbb900;
+}
+
+.contentWrapper {
+  /*padding: 10px 10px;*/
+}
+.locationAndWorkTime {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  /*color: #fbb900;*/
+}
+.workTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.location {
+  color: #fbb900;
+}
+
+
+.weAreDoing {
+  border-top: 5px solid #fbb900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  /*line-height: 25px;*/
+  font-weight: bold;
+  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  border-bottom: 5px solid #fbb900;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainTitle {
+  font-size: 25px;
+  /*background-color: #fbb900;*/
+  border: 3px solid #fbb900;
+  clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+
+  animation-duration: 3s;
+}
+
+.doingList {
+  text-align: left;
+}
+
+.priceList {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*width: 100%;*/
+  padding: 20px;
+  /*gap: 5px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+details {
+  padding: 5px;
+  background-color: #fbb900;
+  width: 100%;
+  /*clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);*/
+}
+.priceTitle{
+  padding: 5px;
+}
+
+details[open] .priceTitle {
+  cursor: pointer;
+  color: white;
+  background-color: #797976;;
+}
+details[open] .priceTitle:before {
+  content: "-";
+}
+details:not([open]) .priceTitle:before {
+  content: "+";
+}
+.priceItem {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EDEDED;
+  padding: 5px;
+}
+
+details summary::-webkit-details-marker {
+  display: none
+}
+
+details > summary {
+  list-style: none;
+}
+
+.passat {
+  position: absolute;
+  width: 100px;
+  bottom: 2px;
+  animation: go-left-right 20s infinite ease-in;
+}
+
+.footer {
+  background-color: #fbb900;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social a{
+  font-size: 30px;
+  color: black;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+}
+.outPlace {
+  padding: 20px 0;
+  padding-bottom: 8px;
+  /*border-top: 5px solid #fbb900;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+
+@keyframes go-left-right {        /* объявляем имя анимации: "go-left-right" */
+  from { left: 100%; }             /* от: left: 0px */
+  to { left: -200px;} /* до: left: 100%-50px */
+}
