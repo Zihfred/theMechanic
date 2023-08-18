@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  color: #212121;
   /*margin-top: 75px;*/
 }
 .header {
@@ -12,8 +13,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 5px solid #fbb900;
-  border-top: 5px solid #fbb900;
+  border-bottom: 3px solid #212121;
+  border-top: 3px solid #212121;
   background-color: #EDEDED;
   /*z-index: 2;*/
 }
@@ -60,6 +61,7 @@
   transition: transform 0.5s;
   display: flex;
   justify-content: center;
+  z-index: 3;
 }
 .menu.active {
   transform: translateX(0);
@@ -103,7 +105,7 @@
 
 .number {
   text-decoration: none;
-  color: #fbb900;
+  color: #212121;
 }
 
 .contentWrapper {
@@ -123,12 +125,12 @@
   gap: 5px;
 }
 .location {
-  color: #fbb900;
+  color: #212121;
 }
 
 
 .weAreDoing {
-  border-top: 5px solid #fbb900;
+  border-top: 3px solid #212121;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,9 +139,8 @@
   /*line-height: 25px;*/
   font-weight: bold;
   padding: 30px;
-  padding-top: 10px;
-  padding-bottom: 40px;
-  border-bottom: 5px solid #fbb900;
+  padding-bottom: 60px;
+  border-bottom: 3px solid #212121;
   position: relative;
   overflow: hidden;
 }
@@ -152,7 +153,8 @@
   border-radius: 5px;
   margin-bottom: 15px;
   padding: 5px 10px;
-
+  margin-top: 20px;
+  margin-bottom: 40px;
   animation-duration: 3s;
 }
 
@@ -178,6 +180,7 @@ details {
   padding: 5px;
   background-color: #fbb900;
   width: 100%;
+  margin-bottom: 8px;
   /*clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);*/
 }
 .priceTitle{
@@ -202,6 +205,11 @@ details:not([open]) .priceTitle:before {
   padding: 5px;
 }
 
+.priceItem > div:nth-child(2) {
+  width: 50px;
+  text-align: right;
+}
+
 details summary::-webkit-details-marker {
   display: none
 }
@@ -218,17 +226,18 @@ details > summary {
 }
 
 .footer {
-  background-color: #fbb900;
-  padding: 25px;
+  background-color: #212121;
+  padding: 60px 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 
 .social a{
   font-size: 30px;
-  color: black;
+  color: white;
 }
 
 .social {
@@ -237,7 +246,7 @@ details > summary {
 }
 .outPlace {
   padding: 20px 0;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   /*border-top: 5px solid #fbb900;*/
   display: flex;
   flex-direction: column;

@@ -12,6 +12,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'PT Sans Narrow', sans-serif;
+  scroll-behavior: smooth;
+  /*scroll to center*/
+  
 }
 html {
   line-height: 1.15; /* 1 */

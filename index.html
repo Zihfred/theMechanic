@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=PT+Sans+Narrow&display=swap"
+        rel="stylesheet">
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -29,7 +31,7 @@
 <div class="wrapper">
   <div class="header">
     <div class="logoWrapper">
-      <img src="img/logo.png" class="logo"/>
+      <img src="img/logo.png" class="logo" alt="logo"/>
     </div>
     <div class="numberWrapper">
       <a href="tel:+380 (68) 585 59 60" class="number">
@@ -59,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="weAreDoing">
+    <div id="weAreDoing" class="weAreDoing">
       <h2 class="mainTitle">Ми займаємось</h2>
       <ul class="doingList">
         <li>Підбором запчастин</li>
@@ -72,112 +74,523 @@
       </ul>
       <img src="img/passat.png" alt="" class="passat">
     </div>
-    <div class="priceList">
+    <div id="priceList" class="priceList">
       <h2 class="mainTitle">Послуги та ціни</h2>
-      <details>
+      <details open>
         <summary>
           <div class="priceTitle"> Діагностика</div>
         </summary>
         <div class="priceItem">
-          <div>Комп'ютерна діагностика</div>
+          <div>Діагностика АКПП</div>
+          <div>350</div>
+        </div>
+        <div class="priceItem">
+          <div>Діагностика гальмівної системи</div>
           <div>250</div>
         </div>
         <div class="priceItem">
-          <div>Видалення кодів несправності однієї системи</div>
-          <div>250</div>
-        </div>
-        <div class="priceItem">
-          <div>Діагностика АКПП на стуки</div>
-          <div>250</div>
-        </div>
-        <div class="priceItem">
-          <div>Діагностика гальмівної системи візуальна</div>
-          <div>250</div>
-        </div>
-        <div class="priceItem">
-          <div>Діагностика двигуна візуальна</div>
-          <div>250</div>
-        </div>
-        <div class="priceItem">
-          <div>Діагностика двигуна на витоки</div>
-          <div>250</div>
+          <div>Діагностика двигуна</div>
+          <div>600</div>
         </div>
         <div class="priceItem">
           <div>Діагностика двигуна на сторонні звуки</div>
           <div>250</div>
         </div>
         <div class="priceItem">
-          <div>Діагностика заднього мосту</div>
-          <div>250</div>
-        </div>
-        <div class="priceItem">
-          <div>Діагностика заднього мосту на витоки</div>
+          <div>Діагностика заднього мосту=</div>
           <div>250</div>
         </div>
         <div class="priceItem">
           <div>Діагностика освітлення</div>
+          <div>400</div>
+        </div>
+        <div class="priceItem">
+          <div>Діагностика роздат коробки</div>
           <div>250</div>
         </div>
         <div class="priceItem">
-          <div>Діагностика підвіски візуальна</div>
-          <div>250</div>
-        </div>
-        <div class="priceItem">
-          <div>Діагностика приводного ременя</div>
-          <div>250</div>
-        </div>
-        <div class="priceItem">
-          <div>Діагностика роздат коробки на витоки</div>
-          <div>250</div>
-        </div>
-        <div class="priceItem">
-          <div>Діагностика ролика приводного ременя</div>
-          <div>250</div>
-        </div>
-        <div class="priceItem">
-          <div>Діагностика системи ГУР на витоки</div>
-          <div>250</div>
-        </div>
-        <div class="priceItem">
-          <div>Діагностика системи ГУР на шум</div>
-          <div>250</div>
+          <div>Діагностика системи ГУР</div>
+          <div>400</div>
         </div>
         <div class="priceItem">
           <div>Діагностика системи охолодження</div>
-          <div>250</div>
-        </div>
-        <div class="priceItem">
-          <div>Діагностика системи охолодження на витоки</div>
-          <div>250</div>
+          <div>300</div>
         </div>
         <div class="priceItem">
           <div>Діагностика системи паркування</div>
-          <div>250</div>
+          <div>300</div>
         </div>
         <div class="priceItem">
-          <div>Діагностика трубок на витоки</div>
-          <div>250</div>
+          <div>Діагностика трубок на протiкання</div>
+          <div>300</div>
         </div>
         <div class="priceItem">
           <div>Діагностика ходової частини</div>
-          <div>250</div>
+          <div>200</div>
+        </div>
+        <div class="priceItem">
+          <div>Комплексна Діагностіка усього автомобіля</div>
+          <div>900</div>
+        </div>
+        <div class="priceItem">
+          <div>Комп'ютерна діагностика</div>
+          <div>450</div>
         </div>
       </details>
-      <!--        <details>-->
-      <!--          <summary>-->
-      <!--            <div class="priceTitle"> Діагностика</div>-->
-      <!--          </summary>-->
-      <!--          <div class="priceItem">-->
-      <!--            <div>Видалення кодів несправності однієї системи</div>-->
-      <!--            <div>200</div>-->
-      <!--          </div>-->
-      <!--          <div class="priceItem">-->
-      <!--            <div>Видалення кодів несправності однієї системи</div>-->
-      <!--            <div>350</div>-->
-      <!--          </div>-->
-      <!--        </details>-->
+      <details>
+        <summary>
+          <div class="priceTitle"> Двигун та коробка передач</div>
+        </summary>
+        <div class="priceItem">
+          <div>Демонтаж/монтаж АКПП</div>
+          <div>7 200</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна насоса системи охолодження (без зняття ременя ГРМ)</div>
+          <div>1 100</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна пильовика ШРУСа</div>
+          <div>700</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна сальника півосі задньої підвіски</div>
+          <div>1 700</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна сальника півосі передньої підвіски</div>
+          <div>900</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна хрестовини карданного валу</div>
+          <div>1 800</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна ШРУСа (гранати)</div>
+          <div> 750</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна щеплення</div>
+          <div>1 500</div>
+        </div>
+        <div class="priceItem">
+          <div>Монтаж / демонтаж колектора</div>
+          <div>1 200</div>
+        </div>
+        <div class="priceItem">
+          <div>Монтаж/ Демонтаж механічної КПП(задній привід)</div>
+          <div>1 800</div>
+        </div>
+        <div class="priceItem">
+          <div>Монтаж/ Демонтаж механічної КПП(передній привід)</div>
+          <div>2 100</div>
+        </div>
+        <div class="priceItem">
+          <div>Монтаж/ Демонтаж механічної КПП(повний привід)</div>
+          <div>2 300</div>
+        </div>
+        <div class="priceItem">
+          <div>Прокачування зчеплення</div>
+          <div> 250</div>
+        </div>
+      </details>
+      <details>
+        <summary>
+          <div class="priceTitle"> Електрика автомобіля</div>
+        </summary>
+        <div class="priceItem">
+          <div>Заміна високовольтного проводу</div>
+          <div>350</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна датчика</div>
+          <div> 300</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна котушки запалювання</div>
+          <div> 600</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна лампи фари</div>
+          <div> 150</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна свічки запалювання (4 шт)</div>
+          <div> 350</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна свічок запалювання 4 шт. (Зі зняттям колектора)</div>
+          <div>1 100</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна свічок запалювання 6 шт. (Зі зняттям колектора)</div>
+          <div>1 200</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна свічок запалювання 8 шт. (Зі зняттям колектора)</div>
+          <div>1 400</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна свічок накалу 4 шт.</div>
+          <div>1 100</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна свічок накалу 6 шт. (Без зняття колектора)</div>
+          <div>1 600</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна свічок накалу 8 шт.</div>
+          <div>2 900</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна термостата</div>
+          <div> 700</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна термостата з корпусом в зборі</div>
+          <div>3 000</div>
+        </div>
+        <div class="priceItem">
+          <div>Зняття ліхтаря</div>
+          <div> 300</div>
+        </div>
+      </details>
+      <details>
+        <summary>
+          <div class="priceTitle"> Гальмівна система</div>
+        </summary>
+        <div class="priceItem">
+          <div>Заміна гальмівних дісків разом з колодками(перед)</div>
+          <div> 900</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна гальмівних колодок барабанних (комплект)</div>
+          <div> 900</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна гальмівних колодок дискових (комплект)</div>
+          <div> 600</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна гальмівних колодок стояночного гальма</div>
+          <div>1 100</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна гальмівного барабана</div>
+          <div> 600</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна гальмівного супорта</div>
+          <div> 600</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна гальмівного циліндра робочого</div>
+          <div> 500</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна гальмівного шланга</div>
+          <div> 450</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна гальмівної рідини</div>
+          <div> 500</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна головного гальмівного циліндра</div>
+          <div> 700</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна задніх гальм колодок</div>
+          <div> 450</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна колодок ручного гальма</div>
+          <div>1 100</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна пильовиків гальмівного супорта</div>
+          <div> 400</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна ремкомплекта гальмівного супорта 1 поршень</div>
+          <div> 750</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна ремкомплекта гальмівного супорта 2 поршня</div>
+          <div>850</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна ремкомплекта гальмівного супорта 4 поршня</div>
+          <div>1 200</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна скоби гальмівного супорта</div>
+          <div> 500</div>
+        </div>
+        <div class="priceItem">
+          <div>Обслуговування гальмівного супорта (чистка скоби, технічні мийка, заміна мастила направляючих, чистка та
+            змащування різьбових з'єднань)
+          </div>
+          <div> 550</div>
+        </div>
+        <div class="priceItem">
+          <div>Регулювання ручного гальма</div>
+          <div> 400</div>
+        </div>
+        <div class="priceItem">
+          <div>Ремонт механізму кріплення колодок стояночного гальма</div>
+          <div> 750</div>
+        </div>
+        <div class="priceItem">
+          <div>Розборка гальмівного супорта</div>
+          <div> 800</div>
+        </div>
+      </details>
+      <details>
+        <summary>
+          <div class="priceTitle"> Заміна технічних рідин, елементів та фільтрів</div>
+        </summary>
+        <div class="priceItem">
+          <div>Долив моторного масла</div>
+          <div> 80</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна масла в АКПП</div>
+          <div> 800</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна масла в двигуні разом з фільтром</div>
+          <div> 400</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна масла в задньому мосту</div>
+          <div> 500</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна масла в механічній КПП</div>
+          <div> 500</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна масла в роздаточній коробці</div>
+          <div> 500</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна масла з промиванням двигуна</div>
+          <div> 650</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна паливного фільтра</div>
+          <div> 350</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна паливного фільтра в баку</div>
+          <div> 800</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна повітряного фільтра</div>
+          <div> 150</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна повітряного фільтра(2 елементи)</div>
+          <div> 300</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна пробки піддону</div>
+          <div> 80</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна прокладки піддону АКПП</div>
+          <div> 750</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна рідини ГПК</div>
+          <div> 500</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна рідини ГПК з промиванням</div>
+          <div> 700</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна рідини системи охолодження</div>
+          <div> 500</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна рідини системи охолодження з промиванням</div>
+          <div> 850</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна фільтра салону</div>
+          <div> 150</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна фільтра салону (кондиціонера) педальний вузол</div>
+          <div> 500</div>
+        </div>
+        <div class="priceItem">
+          <div>Неповна заміна масла АКПП</div>
+          <div> 650</div>
+        </div>
+        <div class="priceItem">
+          <div>Повна заміна масла АКПП</div>
+          <div>1 150</div>
+        </div>
+        <div class="priceItem">
+          <div>Повна заміна рідини АКПП із заміною фільтра АКПП</div>
+          <div>1 200</div>
+        </div>
+        <div class="priceItem">
+          <div>Часткова заміна рідини в АКПП із заміною фільтра АКПП</div>
+          <div>1 150</div>
+        </div>
+
+      </details>
+      <details>
+        <summary>
+          <div class="priceTitle"> Ходова частина</div>
+        </summary>
+        <div class="priceItem">
+          <div>Заміна амортизатора без пружини (вставка)</div>
+          <div>  400</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна важеля</div>
+          <div>  750</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна важеля поздовжнього</div>
+          <div>1 000 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна вакуумного підсилювача гальм</div>
+          <div>1 700 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна верхньої кульової опори</div>
+          <div> 600 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна верхньої подушки двигуна </div>
+          <div> 650 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна втулки стабілізатора</div>
+          <div>300</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна втулок стабілізатора зі зняттям підрамника (2шт)</div>
+          <div>1 350</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна головної пари заднього мосту</div>
+          <div> 700 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна заднього сальника колінвала</div>
+          <div> 900 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна задньої маточини</div>
+          <div> 900 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна кульової опори (запресована)</div>
+          <div> 700 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна кульової опори (кріп. Болти або заклепки)</div>
+          <div> 600 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна нижньої кульової опори</div>
+          <div> 600 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна опорного підшипника</div>
+          <div> 650 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна переднього сальника колінвала</div>
+          <div> 800 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна пильовика рульової рейки</div>
+          <div> 550 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна підвісного підшипника карданного валу</div>
+          <div>1 400 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна підшипника маточини</div>
+          <div> 900 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна підшипника передньої маточини</div>
+          <div>1 100 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна Пневмоамортизатора</div>
+          <div>2 600 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна подушки двигуна нижньої</div>
+          <div> 850 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна прокладки заднього мосту</div>
+          <div> 750 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна пружини заднього амортизатора</div>
+          <div> 600 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна пружини переднього амортизатора</div>
+          <div> 700 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна рульового наконечника</div>
+          <div>450 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна рульової реки (монтаж/демонтаж)</div>
+          <div>2 500 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна рульової тяги</div>
+          <div> 550 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна сайлентблока балки</div>
+          <div>1 100 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна сайлентблока важеля</div>
+          <div>1 400 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна сайлентблока важеля поздовжнього</div>
+          <div>1 400 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна сайлентблока підрамника</div>
+          <div>1 150 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна сайлентблока плаваючого</div>
+          <div> 750 </div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна сайлентблоків важеля</div>
+          <div> 850</div>
+        </div>
+        <div class="priceItem">
+          <div>Заміна стійки стабілізатора</div>
+          <div>  250</div>
+        </div>
+      </details>
     </div>
-    <div class="weAreDoing">
+    <div id="ourPluses" class="weAreDoing">
       <h2 class="mainTitle">Наші переваги</h2>
       <ul class="doingList">
         <li>Якісний ремонт та доступні ціни</li>
@@ -188,7 +601,7 @@
         <li>Приємні бонуси для постійних клієнтів</li>
       </ul>
     </div>
-    <div class="outPlace">
+    <div id="ourPlace" class="outPlace">
       <h2 class="mainTitle">Де ми знаходимось</h2>
       <iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
               src="https://maps.google.com/maps?height=500&amp;hl=en&amp;q=%D0%B2%D1%83%D0%BB.%20%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%B8%D0%BA%D1%96%D0%B2,%2019%D0%90%20Kyiv+(The%20Mechanic)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
@@ -203,7 +616,7 @@
       <a target="_blank" href="https://www.facebook.com/profile.php?id=100093963412324" class="socialLink">
         <i class="fa-brands fa-facebook"/>
       </a>
-      <a target="_blank" href="https://t.me/the_mechanic_s" class="socialLink">
+      <a target="_blank" href="https://t.me/the_mechanic_s">
         <i class="fa-brands fa-telegram"/>
       </a>
     </div>
@@ -214,15 +627,15 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#" class="menuLink">Ми займаємось</a></li>
-        <li><a href="#" class="menuLink">Послуги та ціни</a></li>
-        <li><a href="#" class="menuLink">Наші переваги</a></li>
-        <li><a href="#" class="menuLink">Де ми знаходимось</a></li>
-        <li><a href="#" class="menuLink">Контакти</a></li>
+        <li><a href="#weAreDoing" class="menuLink">Ми займаємось</a></li>
+        <li><a href="#priceList" class="menuLink">Послуги та ціни</a></li>
+        <li><a href="#ourPluses" class="menuLink">Наші переваги</a></li>
+        <li><a href="#ourPlace" class="menuLink">Де ми знаходимось</a></li>
       </ul>
     </nav>
   </div>
 </div>
+
 <script>
   window.ga = function () {
     ga.q.push(arguments)
